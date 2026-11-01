@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+:root {
+  --color-navy: #002d62;
+  --color-navy-deep: #001a3a;
+  --color-orange: #f37021;
+  --color-orange-hover: #d95f18;
+  --color-gray: #58595b;
+  --color-muted: #8a8b8d;
+  --color-icon-wash: #e8f0f8;
+  --color-white: #ffffff;
+  --color-surface: #f7f9fc;
+  --background: #ffffff;
+  --foreground: #002d62;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-navy: var(--color-navy);
+  --color-navy-deep: var(--color-navy-deep);
+  --color-orange: var(--color-orange);
+  --color-orange-hover: var(--color-orange-hover);
+  --color-gray: var(--color-gray);
+  --color-muted: var(--color-muted);
+  --color-icon-wash: var(--color-icon-wash);
+  --color-surface: var(--color-surface);
+  --font-sans: var(--font-montserrat);
+  --font-script: var(--font-great-vibes);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-montserrat), sans-serif;
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes wave-in {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-up {
+  animation: fade-up 0.7s ease-out both;
+}
+
+.animate-wave-in {
+  animation: wave-in 0.8s ease-out 0.15s both;
+}
+
+.script-tagline {
+  font-family: var(--font-great-vibes), cursive;
+}
