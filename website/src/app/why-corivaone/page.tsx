@@ -9,7 +9,7 @@ import { breadcrumbJsonLd, createMetadata } from "@/lib/seo";
 export const metadata = createMetadata({
   title: "Why Coriva One for NAPS & NATS",
   description:
-    "Why SMEs choose Coriva One — compliance support, portal execution, skilled apprentice pipelines, and continuous MIS under People | Compliance | Growth.",
+    "Why organisations choose Coriva One — apprenticeship management, hospitality linen care, staffing, and compliance under People | Solutions | Growth.",
   path: "/why-corivaone",
 });
 

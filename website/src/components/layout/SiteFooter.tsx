@@ -16,13 +16,13 @@ export function SiteFooter() {
             </div>
             <p className="script-tagline text-2xl text-orange">{site.scriptTagline}</p>
             <p className="text-sm text-white/75">
-              End-to-end NAPS & NATS apprenticeship programmes for growing SMEs and mid-sized
-              enterprises.
+              People, solutions, and growth — apprenticeship management, hospitality linen care,
+              staffing, recruitment, compliance, licensing, and HRMS.
             </p>
             <p className="text-xs text-white/60">
-              Supported under frameworks of the Ministry of Skill Development and Entrepreneurship
-              and Ministry of Education apprenticeship ecosystems. Coriva One helps employers
-              implement programmes compliantly — we do not claim unofficial government endorsement.
+              Apprenticeship programmes operate under Government of India NAPS/NATS frameworks.
+              Coriva One helps employers implement compliantly — we do not claim unofficial
+              government endorsement.
             </p>
           </div>
 
@@ -62,9 +62,17 @@ export function SiteFooter() {
               <li><Link href="/for-apprentices" className="hover:text-white">For Apprentices</Link></li>
             </ul>
             <div className="mt-6 space-y-1 text-sm">
+              <p className="font-semibold text-white">{site.salesName}</p>
+              <p className="text-white/70">{site.salesTitle}</p>
+              {site.phone ? (
+                <a href={`tel:${site.phone.replace(/\s/g, "")}`} className="block text-white hover:text-orange">
+                  {site.phone}
+                </a>
+              ) : null}
               <a href={`mailto:${site.email}`} className="block text-white hover:text-orange">
                 {site.email}
               </a>
+              <p className="text-white/70">{site.location}</p>
               <p className="text-white/70">{site.website}</p>
             </div>
           </div>

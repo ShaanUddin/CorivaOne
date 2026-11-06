@@ -6,9 +6,9 @@ import { SectionHeading } from "@/components/ui/SectionHeading";
 import { breadcrumbJsonLd, createMetadata } from "@/lib/seo";
 
 export const metadata = createMetadata({
-  title: "Industries We Serve | Apprenticeship Programmes",
+  title: "Industries We Serve",
   description:
-    "NAPS and NATS apprenticeship programmes for manufacturing, logistics, IT & software, and other SME sectors across India.",
+    "Coriva One serves manufacturing, logistics, IT & software, hospitality and healthcare — apprenticeship programmes plus linen and hospital laundry support.",
   path: "/industries",
 });
 
@@ -27,6 +27,11 @@ const industries = [
     href: "/industries/it-software",
     title: "IT & Software",
     body: "Graduate and diploma apprenticeships under NATS, with NAPS for selected operations and support roles.",
+  },
+  {
+    href: "/industries/hospitality",
+    title: "Hospitality & Healthcare",
+    body: "Hospitality Support Services for linen management and hospital laundry, plus workforce and apprenticeship options.",
   },
 ];
 
@@ -57,7 +62,7 @@ export default function IndustriesPage() {
             title="Where we deliver the most value today"
             description="These sectors combine clear obligation pressure with repeatable apprentice role families."
           />
-          <div className="mt-10 grid gap-6 md:grid-cols-3">
+          <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {industries.map((item) => (
               <Link
                 key={item.href}

@@ -26,7 +26,7 @@ function Dropdown({
           ▼
         </span>
       </button>
-      <div className="invisible absolute left-0 z-40 mt-1 min-w-64 rounded-md border border-[#e4ebf3] bg-white py-2 opacity-0 shadow-lg transition group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100">
+      <div className="invisible absolute left-0 z-40 mt-1 max-h-[70vh] min-w-72 overflow-y-auto rounded-md border border-[#e4ebf3] bg-white py-2 opacity-0 shadow-lg transition group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100">
         {items.map((item) => (
           <Link
             key={item.href}

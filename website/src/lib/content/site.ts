@@ -1,27 +1,45 @@
 export const site = {
   name: "Coriva One",
   wordmark: "CORIVAONE",
-  tagline: "PEOPLE | COMPLIANCE | GROWTH",
+  tagline: "PEOPLE | SOLUTIONS | GROWTH",
   scriptTagline: "Your Growth. Our Commitment.",
-  partnerLine: "Your Apprenticeship Partner for a Stronger Tomorrow.",
-  email: "ranjeeta.rajputa@corivaone.com",
+  partnerLine: "People. Solutions. Growth.",
+  email: "sahil.mahotra@corivaone.com",
+  secondaryEmail: "ranjeeta.rajputa@corivaone.com",
   website: "www.corivaone.com",
+  location: "Gurugram, Haryana, India",
+  salesName: "Sahil Mahotra",
+  salesTitle: "Senior Sales Manager",
   whatsapp: process.env.NEXT_PUBLIC_WHATSAPP_NUMBER ?? "",
-  phone: process.env.NEXT_PUBLIC_PHONE_NUMBER ?? "",
+  phone: process.env.NEXT_PUBLIC_PHONE_NUMBER ?? "+91 98111 23456",
+  logoSrc: "/brand/corivaone-logo.png",
 } as const;
 
 export const nav = {
   services: [
-    { href: "/services/naps", label: "NAPS Apprenticeship" },
-    { href: "/services/nats", label: "NATS Apprenticeship" },
-    { href: "/services/programme-management", label: "End-to-End Programme Management" },
-    { href: "/services/talent-sourcing", label: "Talent Sourcing for Apprentices" },
-    { href: "/services/compliance-reporting", label: "Compliance & Reporting Support" },
+    { href: "/services/apprenticeship-management", label: "Apprenticeship Management Services" },
+    { href: "/services/naps", label: "NAPS" },
+    { href: "/services/nats", label: "NATS" },
+    { href: "/services/hospitality-support", label: "Hospitality Support Services" },
+    { href: "/services/staffing", label: "Staffing Solutions" },
+    { href: "/services/recruitment", label: "Recruitment Solutions" },
+    { href: "/services/labour-compliances", label: "Labour Compliances" },
+    { href: "/services/licensing", label: "Licensing Solutions" },
+    { href: "/services/hrms", label: "HRMS Solutions" },
+  ],
+  apprenticeship: [
+    { href: "/services/apprenticeship-management", label: "Overview" },
+    { href: "/services/naps", label: "NAPS" },
+    { href: "/services/nats", label: "NATS" },
+    { href: "/services/programme-management", label: "Programme Management" },
+    { href: "/services/talent-sourcing", label: "Talent Sourcing" },
+    { href: "/services/compliance-reporting", label: "Compliance & Reporting" },
   ],
   industries: [
     { href: "/industries/manufacturing", label: "Manufacturing" },
     { href: "/industries/logistics", label: "Logistics" },
     { href: "/industries/it-software", label: "IT & Software" },
+    { href: "/industries/hospitality", label: "Hospitality & Healthcare" },
     { href: "/industries", label: "All Industries" },
   ],
   resources: [
@@ -32,6 +50,44 @@ export const nav = {
     { href: "/tools/am-i-compliant", label: "Am I Compliant?" },
   ],
 } as const;
+
+export const businessVerticals = [
+  {
+    href: "/services/apprenticeship-management",
+    title: "Apprenticeship Management Services",
+    body: "End-to-end NAPS & NATS programmes — registration, sourcing, stipend support, compliance, and reporting.",
+  },
+  {
+    href: "/services/hospitality-support",
+    title: "Hospitality Support Services",
+    body: "Corporate linen management and care, including hospital laundry and managed textile services.",
+  },
+  {
+    href: "/services/staffing",
+    title: "Staffing Solutions",
+    body: "Flexible workforce deployment for operations, projects, and seasonal demand.",
+  },
+  {
+    href: "/services/recruitment",
+    title: "Recruitment Solutions",
+    body: "Role-fit hiring across permanent, campus, and specialised mandates.",
+  },
+  {
+    href: "/services/labour-compliances",
+    title: "Labour Compliances",
+    body: "Statutory and labour-law compliance support to keep establishments audit-ready.",
+  },
+  {
+    href: "/services/licensing",
+    title: "Licensing Solutions",
+    body: "Registrations and licences support for smoother business operations.",
+  },
+  {
+    href: "/services/hrms",
+    title: "HRMS Solutions",
+    body: "HR systems enablement for attendance, payroll inputs, and employee lifecycle visibility.",
+  },
+] as const;
 
 export const pillars = [
   {

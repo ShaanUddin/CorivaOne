@@ -2,7 +2,7 @@ import { ButtonLink } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
 
 export function Hero({
-  eyebrow = "PEOPLE | COMPLIANCE | GROWTH",
+  eyebrow = "PEOPLE | SOLUTIONS | GROWTH",
   title,
   subtitle,
   primaryCta = { href: "/contact", label: "Talk to an Expert" },

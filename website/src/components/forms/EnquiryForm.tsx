@@ -9,10 +9,35 @@ import { getUtmParams, trackEnquirySubmit } from "@/lib/analytics";
 type Errors = Partial<Record<string, string>>;
 
 const employeeOptions = ["1–29", "30–99", "100–499", "500+"];
-const industryOptions = ["Manufacturing", "Logistics", "IT & Software", "Other"];
-const interestOptions = ["NAPS", "NATS", "Both", "Not sure"];
+const industryOptions = [
+  "Manufacturing",
+  "Logistics",
+  "IT & Software",
+  "Hospitality",
+  "Healthcare / Hospital",
+  "Other",
+];
+const interestOptions = [
+  "Apprenticeship Management",
+  "NAPS",
+  "NATS",
+  "Hospitality Support",
+  "Hospital Laundry",
+  "Staffing",
+  "Recruitment",
+  "Labour Compliances",
+  "Licensing",
+  "HRMS",
+  "Not sure",
+];
 
-export function EnquiryForm({ compact = false }: { compact?: boolean }) {
+export function EnquiryForm({
+  compact = false,
+  defaultInterest = "",
+}: {
+  compact?: boolean;
+  defaultInterest?: string;
+}) {
   const pathname = usePathname();
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
   const [errors, setErrors] = useState<Errors>({});
@@ -26,11 +51,11 @@ export function EnquiryForm({ compact = false }: { compact?: boolean }) {
       companyName: "",
       employeeCount: "",
       industry: "",
-      interest: "",
+      interest: defaultInterest,
       message: "",
       website: "",
     }),
-    [],
+    [defaultInterest],
   );
   const [form, setForm] = useState(initial);
 

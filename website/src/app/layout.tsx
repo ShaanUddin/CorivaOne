@@ -20,11 +20,11 @@ const greatVibes = Great_Vibes({
 
 export const metadata: Metadata = {
   title: {
-    default: "Coriva One | NAPS & NATS Apprenticeship Partner",
+    default: "Coriva One | People | Solutions | Growth",
     template: "%s | Coriva One",
   },
   description:
-    "Coriva One helps SMEs and mid-sized enterprises implement NAPS and NATS apprenticeship programmes — compliance, talent, stipend support, and reporting.",
+    "Coriva One — Apprenticeship Management Services (NAPS & NATS), Hospitality Support Services including hospital laundry, staffing, recruitment, labour compliances, licensing, and HRMS.",
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.corivaone.com"),
 };
 

@@ -9,7 +9,7 @@ import { breadcrumbJsonLd, createMetadata } from "@/lib/seo";
 export const metadata = createMetadata({
   title: "About Coriva One",
   description:
-    "Coriva One is an SME apprenticeship consultancy helping employers implement NAPS and NATS programmes — People | Compliance | Growth.",
+    "Coriva One delivers Apprenticeship Management Services, Hospitality Support Services, staffing, recruitment, and compliance solutions — People | Solutions | Growth.",
   path: "/about",
 });
 

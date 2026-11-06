@@ -40,10 +40,17 @@ export function organizationJsonLd() {
     "@type": "Organization",
     name: "Coriva One",
     url: SITE_URL,
-    email: "ranjeeta.rajputa@corivaone.com",
+    email: "sahil.mahotra@corivaone.com",
     description:
-      "NAPS & NATS apprenticeship programme partner helping SMEs and mid-sized enterprises build skilled, compliant, cost-effective workforces.",
-    slogan: "People | Compliance | Growth",
+      "Coriva One delivers Apprenticeship Management Services (NAPS & NATS), Hospitality Support Services including linen and hospital laundry, staffing, recruitment, compliance, licensing, and HRMS solutions.",
+    slogan: "People | Solutions | Growth",
+    logo: `${SITE_URL}/brand/corivaone-logo.png`,
+    address: {
+      "@type": "PostalAddress",
+      addressLocality: "Gurugram",
+      addressRegion: "Haryana",
+      addressCountry: "IN",
+    },
   };
 }
 

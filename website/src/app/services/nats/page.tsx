@@ -32,6 +32,7 @@ export default function NatsPage() {
           __html: JSON.stringify(
             breadcrumbJsonLd([
               { name: "Home", path: "/" },
+              { name: "Apprenticeship Management Services", path: "/services/apprenticeship-management" },
               { name: "NATS", path: "/services/nats" },
             ]),
           ),

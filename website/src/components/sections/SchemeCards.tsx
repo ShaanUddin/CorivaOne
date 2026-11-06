@@ -8,9 +8,9 @@ export function SchemeCards() {
     <section className="bg-surface py-16 lg:py-20">
       <Container>
         <SectionHeading
-          eyebrow="NAPS & NATS"
-          title="Government-backed. Industry-focused. Future-ready."
-          description="Two national schemes. Different talent pools. One implementation partner."
+          eyebrow="Apprenticeship Management Services"
+          title="NAPS & NATS — government-backed. Industry-focused. Future-ready."
+          description="Two national schemes under one Coriva One service line. Different talent pools. One implementation partner."
         />
         <div className="mt-10 grid gap-6 lg:grid-cols-2">
           <article className="rounded-lg border border-[#dce5f0] bg-white p-6 shadow-sm">

@@ -6,7 +6,7 @@ const industries = [
   { href: "/industries/manufacturing", label: "Manufacturing", blurb: "Operators, technicians, quality roles" },
   { href: "/industries/logistics", label: "Logistics", blurb: "Warehouse, dispatch, field ops pipelines" },
   { href: "/industries/it-software", label: "IT & Software", blurb: "Graduate / diploma trainee funnels" },
-  { href: "/industries", label: "And more", blurb: "BFSI, retail, infrastructure & beyond" },
+  { href: "/industries/hospitality", label: "Hospitality & Healthcare", blurb: "Linen care and hospital laundry" },
 ];
 
 export function IndustriesStrip() {
