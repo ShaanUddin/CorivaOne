@@ -15,17 +15,84 @@ export const site = {
   logoSrc: "/brand/corivaone-logo.png",
 } as const;
 
+/** Primary services shown on home + main commercial menu order */
+export const servicesWeCater = [
+  {
+    href: "/services/apprenticeship-management",
+    title: "Apprenticeship Programs",
+    body: "End-to-end NAPS & NATS apprenticeship management for compliant, cost-effective talent pipelines.",
+  },
+  {
+    href: "/services/staffing",
+    title: "Staffing Solutions",
+    body: "Flexible workforce deployment for operations, projects, and seasonal demand.",
+  },
+  {
+    href: "/services/recruitment",
+    title: "Recruitment Services",
+    body: "Role-fit hiring across permanent, campus, and specialised mandates.",
+  },
+  {
+    href: "/services/payroll",
+    title: "Payroll Management",
+    body: "Accurate payroll processing with statutory inputs and dependable monthly runs.",
+  },
+  {
+    href: "/services/labour-compliances",
+    title: "Labour Law Compliances",
+    body: "Statutory and labour-law compliance support to keep establishments audit-ready.",
+  },
+  {
+    href: "/services/hrms",
+    title: "HRMS",
+    body: "HR systems enablement for attendance, payroll inputs, and employee lifecycle visibility.",
+  },
+] as const;
+
+export const industriesWeCater = [
+  {
+    href: "/industries/manufacturing",
+    title: "Manufacturing",
+    body: "Plant, quality, and shop-floor workforce programmes.",
+  },
+  {
+    href: "/industries/logistics",
+    title: "Logistics",
+    body: "Warehouse, dispatch, and multi-site operations support.",
+  },
+  {
+    href: "/industries/hospitality",
+    title: "Hospitality",
+    body: "Hotels, facilities, and hospitality operations.",
+  },
+  {
+    href: "/industries/it-software",
+    title: "IT & ITeS",
+    body: "Technology and services talent pipelines.",
+  },
+  {
+    href: "/industries/power",
+    title: "Power",
+    body: "Energy and utilities workforce solutions.",
+  },
+  {
+    href: "/industries/retail-ecommerce",
+    title: "Retail & E-commerce",
+    body: "Store, fulfilment, and customer-ops scale.",
+  },
+] as const;
+
 export const nav = {
   services: [
-    { href: "/services/apprenticeship-management", label: "Apprenticeship Management Services" },
+    { href: "/services/apprenticeship-management", label: "Apprenticeship Programs" },
     { href: "/services/naps", label: "NAPS" },
     { href: "/services/nats", label: "NATS" },
-    { href: "/services/hospitality-support", label: "Hospitality Support Services" },
     { href: "/services/staffing", label: "Staffing Solutions" },
-    { href: "/services/recruitment", label: "Recruitment Solutions" },
-    { href: "/services/labour-compliances", label: "Labour Compliances" },
-    { href: "/services/licensing", label: "Licensing Solutions" },
-    { href: "/services/hrms", label: "HRMS Solutions" },
+    { href: "/services/recruitment", label: "Recruitment Services" },
+    { href: "/services/payroll", label: "Payroll Management" },
+    { href: "/services/labour-compliances", label: "Labour Law Compliances" },
+    { href: "/services/hrms", label: "HRMS" },
+    { href: "/services/hospitality-support", label: "Hospitality Support Services" },
   ],
   apprenticeship: [
     { href: "/services/apprenticeship-management", label: "Overview" },
@@ -38,8 +105,10 @@ export const nav = {
   industries: [
     { href: "/industries/manufacturing", label: "Manufacturing" },
     { href: "/industries/logistics", label: "Logistics" },
-    { href: "/industries/it-software", label: "IT & Software" },
-    { href: "/industries/hospitality", label: "Hospitality & Healthcare" },
+    { href: "/industries/hospitality", label: "Hospitality" },
+    { href: "/industries/it-software", label: "IT & ITeS" },
+    { href: "/industries/power", label: "Power" },
+    { href: "/industries/retail-ecommerce", label: "Retail & E-commerce" },
     { href: "/industries", label: "All Industries" },
   ],
   resources: [
@@ -51,68 +120,30 @@ export const nav = {
   ],
 } as const;
 
-export const businessVerticals = [
-  {
-    href: "/services/apprenticeship-management",
-    title: "Apprenticeship Management Services",
-    body: "End-to-end NAPS & NATS programmes — registration, sourcing, stipend support, compliance, and reporting.",
-  },
-  {
-    href: "/services/hospitality-support",
-    title: "Hospitality Support Services",
-    body: "Corporate linen management and care, including hospital laundry and managed textile services.",
-  },
-  {
-    href: "/services/staffing",
-    title: "Staffing Solutions",
-    body: "Flexible workforce deployment for operations, projects, and seasonal demand.",
-  },
-  {
-    href: "/services/recruitment",
-    title: "Recruitment Solutions",
-    body: "Role-fit hiring across permanent, campus, and specialised mandates.",
-  },
-  {
-    href: "/services/labour-compliances",
-    title: "Labour Compliances",
-    body: "Statutory and labour-law compliance support to keep establishments audit-ready.",
-  },
-  {
-    href: "/services/licensing",
-    title: "Licensing Solutions",
-    body: "Registrations and licences support for smoother business operations.",
-  },
-  {
-    href: "/services/hrms",
-    title: "HRMS Solutions",
-    body: "HR systems enablement for attendance, payroll inputs, and employee lifecycle visibility.",
-  },
-] as const;
-
 export const pillars = [
   {
-    title: "Compliance Made Easy",
-    body: "Stay aligned with apprenticeship guidelines and establishment obligations without drowning in portal work.",
+    title: "People First",
+    body: "Build skilled talent pipelines and dependable workforce capacity across roles and locations.",
   },
   {
-    title: "Skilled Workforce",
-    body: "Build a pipeline of job-ready talent trained on your floor, roles, and operating standards.",
+    title: "End-to-End Solutions",
+    body: "From apprenticeship and staffing to payroll, compliance, HRMS, and hospitality support — one partner.",
   },
   {
-    title: "Cost Effective",
-    body: "Share stipend cost with government support under NAPS and NATS while reducing entry-level hiring load.",
+    title: "Operational Clarity",
+    body: "Clear processes, documentation, and reporting so leadership stays in control every month.",
   },
   {
-    title: "End-to-End Support",
-    body: "From registration and contracts to stipend administration, monitoring, and reporting — we run the programme with you.",
+    title: "Growth Ready",
+    body: "Scale people and operations without losing compliance discipline or service quality.",
   },
 ] as const;
 
 export const whyChoose = [
-  "100% compliance support across registration, contracts, and programme records",
-  "Hassle-free registration and documentation on apprenticeship portals",
-  "Skilled and trained talent pool matched to your roles and locations",
-  "Continuous monitoring and reporting so leadership stays audit-ready",
+  "New-age startup mindset with practical, execution-led delivery",
+  "End-to-end solutions across workforce, compliance, and hospitality support",
+  "Apprenticeship programmes under NAPS & NATS with portal-to-reporting ownership",
+  "Dedicated hospitality support through managed linen and textile care services",
 ] as const;
 
 export const processSteps = [

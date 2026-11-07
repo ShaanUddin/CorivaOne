@@ -42,7 +42,7 @@ export function organizationJsonLd() {
     url: SITE_URL,
     email: "sahil.mahotra@corivaone.com",
     description:
-      "Coriva One delivers Apprenticeship Management Services (NAPS & NATS), Hospitality Support Services including linen and hospital laundry, staffing, recruitment, compliance, licensing, and HRMS solutions.",
+      "Coriva One is a new-age startup providing end-to-end solutions — apprenticeship programs, staffing, recruitment, payroll, labour law compliances, HRMS, and Hospitality Support Services (managed linen and textile care).",
     slogan: "People | Solutions | Growth",
     logo: `${SITE_URL}/brand/corivaone-logo.png`,
     address: {

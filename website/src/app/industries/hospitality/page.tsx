@@ -5,9 +5,9 @@ import { ButtonLink } from "@/components/ui/Button";
 import { breadcrumbJsonLd, createMetadata } from "@/lib/seo";
 
 export const metadata = createMetadata({
-  title: "Hospitality & Healthcare Industry Solutions",
+  title: "Hospitality Industry Solutions",
   description:
-    "Coriva One supports hospitality and healthcare with linen management, hospital laundry, staffing, and apprenticeship programmes.",
+    "Coriva One supports hospitality businesses with Hospitality Support Services (managed linen and textile care), staffing, recruitment, and apprenticeship programmes.",
   path: "/industries/hospitality",
 });
 
@@ -21,25 +21,25 @@ export default function HospitalityIndustryPage() {
             breadcrumbJsonLd([
               { name: "Home", path: "/" },
               { name: "Industries", path: "/industries" },
-              { name: "Hospitality & Healthcare", path: "/industries/hospitality" },
+              { name: "Hospitality", path: "/industries/hospitality" },
             ]),
           ),
         }}
       />
       <PageHero
         eyebrow="Industries"
-        title="Hospitality & Healthcare"
-        description="Linen care and hospital laundry for facilities teams, plus workforce and apprenticeship support where needed."
+        title="Hospitality"
+        description="Hospitality Support Services for managed linen and textile care, plus staffing, recruitment, and apprenticeship options for hospitality operations."
         cta={{ href: "/services/hospitality-support", label: "Hospitality Support Services" }}
       />
       <section className="py-12">
         <Container className="flex flex-wrap gap-3">
-          <ButtonLink href="/services/hospitality-support">Linen & hospital laundry</ButtonLink>
-          <ButtonLink href="/services/apprenticeship-management" variant="secondary">
-            Apprenticeship programmes
-          </ButtonLink>
+          <ButtonLink href="/services/hospitality-support">Hospitality Support Services</ButtonLink>
           <ButtonLink href="/services/staffing" variant="secondary">
             Staffing
+          </ButtonLink>
+          <ButtonLink href="/services/apprenticeship-management" variant="secondary">
+            Apprenticeship Programs
           </ButtonLink>
         </Container>
       </section>

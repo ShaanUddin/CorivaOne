@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     template: "%s | Coriva One",
   },
   description:
-    "Coriva One — Apprenticeship Management Services (NAPS & NATS), Hospitality Support Services including hospital laundry, staffing, recruitment, labour compliances, licensing, and HRMS.",
+    "Coriva One is a new-age startup providing end-to-end business solutions — apprenticeship, staffing, recruitment, payroll, labour compliances, HRMS, and hospitality support services.",
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.corivaone.com"),
 };
 

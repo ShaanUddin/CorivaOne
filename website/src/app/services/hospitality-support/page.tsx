@@ -6,28 +6,28 @@ import { EnquiryForm } from "@/components/forms/EnquiryForm";
 import { breadcrumbJsonLd, createMetadata } from "@/lib/seo";
 
 export const metadata = createMetadata({
-  title: "Hospitality Support Services | Linen & Hospital Laundry",
+  title: "Hospitality Support Services | Managed Linen & Textile Care",
   description:
-    "Coriva One Hospitality Support Services — corporate managed linen and textile care, including hospital laundry programmes. Enquire now.",
+    "Coriva One Hospitality Support Services deliver managed linen and textile care services for corporates, hospitality, and hospital laundry programmes. Enquire now.",
   path: "/services/hospitality-support",
 });
 
 const linenFeatures = [
   {
-    title: "Corporate linen management",
-    body: "Managed textile and linen programmes for hotels, corporates, facilities, and institutional campuses — pickup, process, quality control, and return cycles.",
+    title: "Managed linen programmes",
+    body: "End-to-end linen cycles for hotels, corporates, and institutions — pickup, processing, quality control, and return.",
   },
   {
-    title: "Linen care standards",
-    body: "Hygienic handling, sorting, washing, finishing, and inventory discipline so your guest or patient experience stays consistent.",
+    title: "Textile care standards",
+    body: "Hygienic handling, sorting, washing, finishing, and inventory discipline for consistent service quality.",
   },
   {
     title: "Hospital laundry",
-    body: "Dedicated hospital laundry support for healthcare environments where infection control, turnaround time, and batch tracking matter.",
+    body: "Dedicated hospital laundry support where hygiene, turnaround, and batch discipline matter.",
   },
   {
     title: "Operational reporting",
-    body: "Clear programme visibility on volumes, turnaround, and service levels so facilities and procurement teams stay in control.",
+    body: "Visibility on volumes, turnaround, and service levels for facilities and procurement teams.",
   },
 ];
 
@@ -47,16 +47,17 @@ export default function HospitalitySupportPage() {
       />
       <PageHero
         eyebrow="Hospitality Support Services"
-        title="Linen management and care for corporates and hospitals"
-        description="A separate Coriva One business vertical for managed textile and linen services — including hospital laundry — so hospitality and healthcare operations run clean, compliant, and on schedule."
+        title="Hospitality Support Services"
+        description="A Coriva One business vertical focused on managed linen and textile care services for hospitality, corporate facilities, and healthcare environments."
+        cta={{ href: "#enquire", label: "Enquire Now" }}
       />
 
       <section className="py-16 lg:py-20">
         <Container>
           <SectionHeading
-            eyebrow="What we deliver"
-            title="Corporate managed textile and linen services"
-            description="From day-to-day linen cycles to specialised hospital laundry, Coriva One supports facilities teams with dependable hospitality operations."
+            eyebrow="What we do under this vertical"
+            title="Managed linen and textile care services"
+            description="Hospitality Support Services covers corporate managed textile and linen care — including specialised hospital laundry support."
           />
           <div className="mt-10 grid gap-5 md:grid-cols-2">
             {linenFeatures.map((item) => (
@@ -79,25 +80,25 @@ export default function HospitalitySupportPage() {
           <div>
             <p className="text-xs font-bold tracking-[0.18em] text-orange uppercase">Hospital laundry</p>
             <h2 className="mt-3 text-3xl font-extrabold tracking-tight sm:text-4xl">
-              Built for healthcare turnaround and hygiene discipline
+              Textile care built for healthcare turnaround
             </h2>
             <p className="mt-4 text-white/85">
-              Hospital laundry is not generic hospitality washing. We focus on process discipline —
-              segregation, hygienic processing, reliable turnaround, and coordination with hospital
-              housekeeping or CSSD-linked workflows as defined with your facilities team.
+              Hospital laundry sits inside Hospitality Support Services — with process discipline for
+              segregation, hygienic processing, reliable turnaround, and coordination with your
+              facilities team.
             </p>
             <ul className="mt-6 space-y-2 text-sm text-white/80">
               <li>• Batch-oriented handling for hospital linen categories</li>
-              <li>• Emphasis on hygiene, contamination control, and documentation</li>
-              <li>• Service cadence aligned to ward and OT linen demand</li>
+              <li>• Emphasis on hygiene and documentation</li>
+              <li>• Service cadence aligned to facility demand</li>
             </ul>
           </div>
           <div className="rounded-lg bg-white/5 p-6 ring-1 ring-white/15">
             <h3 className="text-xl font-bold">Who this is for</h3>
             <ul className="mt-4 space-y-3 text-sm text-white/85">
-              <li>Hospitals and nursing homes needing dependable laundry cycles</li>
-              <li>Hotel and hospitality groups seeking managed linen care</li>
-              <li>Corporate campuses and institutions with textile service needs</li>
+              <li>Hotels and hospitality groups</li>
+              <li>Hospitals and nursing homes</li>
+              <li>Corporate campuses and institutions</li>
             </ul>
           </div>
         </Container>
@@ -108,7 +109,7 @@ export default function HospitalitySupportPage() {
           <div>
             <SectionHeading
               eyebrow="Enquire now"
-              title="Start a hospitality linen or hospital laundry conversation"
+              title="Talk to us about Hospitality Support Services"
               description="Share your facility type, approximate linen volume, and locations. We respond within one business day."
             />
             <p className="mt-4 text-sm text-gray">
@@ -117,14 +118,10 @@ export default function HospitalitySupportPage() {
                 sahil.mahotra@corivaone.com
               </a>
             </p>
-            <p className="mt-6 text-xs text-muted">
-              Hospitality Support Services is a Coriva One business vertical separate from
-              Apprenticeship Management Services.
-            </p>
           </div>
           <div className="rounded-lg border border-[#dce5f0] bg-white p-5 shadow-sm">
             <h3 className="text-lg font-bold text-navy">Enquire now</h3>
-            <p className="mt-1 text-sm text-gray">Hospitality / linen / hospital laundry interest welcome.</p>
+            <p className="mt-1 text-sm text-gray">Hospitality Support / managed linen & textile care.</p>
             <div className="mt-4">
               <EnquiryForm compact defaultInterest="Hospitality Support" />
             </div>

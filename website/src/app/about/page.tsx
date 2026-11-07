@@ -3,13 +3,13 @@ import { CtaBand } from "@/components/sections/CtaBand";
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { ButtonLink } from "@/components/ui/Button";
-import { site } from "@/lib/content/site";
+import { site, servicesWeCater, industriesWeCater } from "@/lib/content/site";
 import { breadcrumbJsonLd, createMetadata } from "@/lib/seo";
 
 export const metadata = createMetadata({
   title: "About Coriva One",
   description:
-    "Coriva One delivers Apprenticeship Management Services, Hospitality Support Services, staffing, recruitment, and compliance solutions — People | Solutions | Growth.",
+    "Coriva One is a new-age startup providing businesses with end-to-end solutions across apprenticeship, staffing, recruitment, payroll, labour compliances, HRMS, and hospitality support.",
   path: "/about",
 });
 
@@ -28,31 +28,31 @@ export default function AboutPage() {
         }}
       />
       <PageHero
-        eyebrow="About"
-        title="Your apprenticeship partner for a stronger tomorrow"
-        description={`${site.name} helps SMEs and mid-sized enterprises implement NAPS and NATS apprenticeship programmes with operational discipline — compliance, talent, stipend support, and reporting under one partner.`}
+        eyebrow="About Us"
+        title="A new-age startup providing businesses with end-to-end solutions"
+        description="Coriva One partners with growing organisations to deliver people, operations, and compliance solutions — from apprenticeship programmes and staffing to payroll, labour law compliances, HRMS, and hospitality support services."
         cta={{ href: "/contact", label: "Get in touch" }}
       />
       <section className="py-16 lg:py-20">
         <Container>
           <SectionHeading
             eyebrow={site.tagline}
-            title="Built for employers who need programmes that run every month"
-            description="Apprenticeship schemes create real workforce value when portal work, contracts, stipend evidence, and supervisor feedback stay current. That is the operating layer we own with you."
+            title="Built to make business operations simpler"
+            description="We combine practical execution with clear ownership. Whether you need a compliant apprentice pipeline, dependable staffing, payroll discipline, or managed linen and textile care under Hospitality Support Services — we stay accountable for outcomes."
           />
           <div className="mt-10 grid gap-6 md:grid-cols-3">
             {[
               {
                 title: "People",
-                body: "Build a supervised pipeline of apprentices matched to roles and locations — then convert the ones who fit.",
+                body: "Talent and workforce programmes that help you hire, deploy, and develop the right capacity.",
               },
               {
-                title: "Compliance",
-                body: "Stay inside obligation bands with contracts, training plans, and records that hold up to review.",
+                title: "Solutions",
+                body: "End-to-end offerings across apprenticeship, staffing, recruitment, payroll, compliance, HRMS, and hospitality support.",
               },
               {
                 title: "Growth",
-                body: "Lower the friction of entry-level capacity while sharing stipend cost with government support where eligible.",
+                body: "Scalable operating support so leadership can focus on customers and expansion — not admin friction.",
               },
             ].map((item) => (
               <article key={item.title} className="rounded-lg border border-[#e4ebf3] bg-white p-5">
@@ -61,24 +61,56 @@ export default function AboutPage() {
               </article>
             ))}
           </div>
-          <p className="mt-8 text-sm text-gray">
+        </Container>
+      </section>
+
+      <section className="bg-surface py-16 lg:py-20">
+        <Container className="grid gap-10 lg:grid-cols-2">
+          <div>
+            <SectionHeading
+              eyebrow="What we deliver"
+              title="Services designed for real operating needs"
+            />
+            <ul className="mt-6 space-y-2 text-sm text-gray">
+              {servicesWeCater.map((item) => (
+                <li key={item.href}>• {item.title}</li>
+              ))}
+              <li>• Hospitality Support Services (managed linen & textile care)</li>
+            </ul>
+          </div>
+          <div>
+            <SectionHeading
+              eyebrow="Where we work"
+              title="Industries we cater to"
+            />
+            <ul className="mt-6 space-y-2 text-sm text-gray">
+              {industriesWeCater.map((item) => (
+                <li key={item.href}>• {item.title}</li>
+              ))}
+              <li>• And many more</li>
+            </ul>
+          </div>
+        </Container>
+        <Container className="mt-10">
+          <p className="text-sm text-gray">
             Reach us at{" "}
             <a className="font-semibold text-orange hover:underline" href={`mailto:${site.email}`}>
               {site.email}
-            </a>
-            . We respond within one business day.
+            </a>{" "}
+            · {site.location}. We respond within one business day.
           </p>
-          <div className="mt-8 flex flex-wrap gap-3">
-            <ButtonLink href="/why-corivaone">Why Coriva One</ButtonLink>
-            <ButtonLink href="/careers" variant="secondary">
-              Careers
+          <div className="mt-6 flex flex-wrap gap-3">
+            <ButtonLink href="/contact">Enquire Now</ButtonLink>
+            <ButtonLink href="/why-corivaone" variant="secondary">
+              Why Coriva One
             </ButtonLink>
           </div>
         </Container>
       </section>
+
       <CtaBand
-        title={site.partnerLine}
-        description="Tell us about your workforce — we’ll map NAPS / NATS fit."
+        title="Let’s build the right solution mix for your business"
+        description="Tell us about your workforce, compliance, or hospitality support needs."
       />
     </>
   );

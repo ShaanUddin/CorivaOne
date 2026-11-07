@@ -16,8 +16,8 @@ export function SiteFooter() {
             </div>
             <p className="script-tagline text-2xl text-orange">{site.scriptTagline}</p>
             <p className="text-sm text-white/75">
-              People, solutions, and growth — apprenticeship management, hospitality linen care,
-              staffing, recruitment, compliance, licensing, and HRMS.
+              A new-age startup providing end-to-end solutions — apprenticeship programs, staffing,
+              recruitment, payroll, labour compliances, HRMS, and hospitality support services.
             </p>
             <p className="text-xs text-white/60">
               Apprenticeship programmes operate under Government of India NAPS/NATS frameworks.

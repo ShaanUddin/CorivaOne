@@ -18,16 +18,15 @@ const industryOptions = [
   "Other",
 ];
 const interestOptions = [
-  "Apprenticeship Management",
+  "Apprenticeship Programs",
   "NAPS",
   "NATS",
-  "Hospitality Support",
-  "Hospital Laundry",
-  "Staffing",
-  "Recruitment",
-  "Labour Compliances",
-  "Licensing",
+  "Staffing Solutions",
+  "Recruitment Services",
+  "Payroll Management",
+  "Labour Law Compliances",
   "HRMS",
+  "Hospitality Support",
   "Not sure",
 ];
 
